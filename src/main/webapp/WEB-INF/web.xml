@@ -93,5 +93,10 @@
   		<location>/WEB-INF/views/errors/server.jsp</location> <!-- 해당 익셉션을 원하는 페이지로 포워딩 -->
   	</error-page>
   	
-  
+  	<error-page>
+  		<error-code>500</error-code>
+  		<location>/WEB-INF/views/errors/server.jsp</location>
+  	</error-page>
+  	
+  	
 </web-app>

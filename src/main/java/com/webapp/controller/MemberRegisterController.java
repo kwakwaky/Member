@@ -74,8 +74,12 @@ public class MemberRegisterController {
 		return member;
 	}
 	
+	
+	
 	@RequestMapping(value="/regist", method=RequestMethod.GET)
 	public String registerForm() {
+		
+		
 		
 		return "member/registForm";
 	}
