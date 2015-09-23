@@ -17,6 +17,7 @@
 <script type="text/javascript">
 	var member = "";
 	
+	
 // 	{					// { };  <-- 이게 하나의 객체
 // 			// JSON (JavaScript Object Notation)
 // 			email : "xxx@webapp.com",
@@ -33,7 +34,7 @@
 		$('button:first').on("click", function() {
 			
 			//Ajax(Asyncronous Javascript and xml)
-			
+	
 			$.getJSON("member.json", function(member) {
 				
 				console.log(member);

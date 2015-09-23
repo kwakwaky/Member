@@ -88,7 +88,7 @@
 </bean>
 
 <tx:annotation-driven transaction-manager="transactionManager" order="10"/> <!-- 어노테이션 기반으로 트랜잭션 자동구현 -->
-<aop:aspectj-autoproxy/> <!-- 자동으로 aop설정해줌 -->
+<aop:aspectj-autoproxy proxy-target-class="true"/> <!-- 자동으로 aop설정해줌 -->
 
 <!-- Aspect구현 클래스를 빈에 등록 -->
 <bean id="loggingAspect" class="com.webapp.aspect.LoggingAspect">

@@ -59,7 +59,6 @@ $(document).ready(function() {
 <body>
 
 <c:url value="/login" var="login"/>
-<c:url value="/login" var="login"/>
 <c:url value="/logout" var="logout"/>
 
 <nav class="w3-topnav w3-red w3-margin w3-card-16">

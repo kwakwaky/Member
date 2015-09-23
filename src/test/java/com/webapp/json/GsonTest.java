@@ -1,6 +1,8 @@
 package com.webapp.json;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -39,6 +41,17 @@ public class GsonTest {
 		System.out.println(json);
 		
 		// serialization 한거임 : 객체를 스트링으로
+		
+		/*
+		 * Map
+		 */
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("aaa", "Hello");
+		map.put("bbb", m);
+		map.put("ccc", new Object[] {"seoul", "pusan"});
+		
+		json = g.toJson(map);
+		System.out.println(json);
 	}
 
 }
